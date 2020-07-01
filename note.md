@@ -771,7 +771,7 @@ observer(data);
       ```html
       <div v-bind:class="{ red: isRed }"></div>
       ```
-      上面的语法表示 active 这个 class 存在与否将取决于数据属性 isActive 的 真假。
+      上面的语法表示 red 这个 class 存在与否将取决于数据属性 isRed 的 真假。
 
     - 数组语法
       我们可以把一个数组传给 v-bind:class，以应用一个 class 列表
@@ -780,7 +780,7 @@ observer(data);
       ```
     - 在数组语法总可以使用三元表达式来切换class
       ```html
-      <div v-bind:class="[isActive ? activeClass : '', errorClass]"></div>
+      <div v-bind:class="[isRed ? activeClass : '', errorClass]"></div>
       ```
     - 在数组语法中可以使用对象语法
       ```html
